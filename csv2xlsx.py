@@ -30,7 +30,7 @@ if __name__ == '__main__':
     logger.addHandler(handler)
 
     p = argparse.ArgumentParser()
-    p.add_argument('input CSV file', type=str, help='input CSV file name')
+    p.add_argument('input', type=str, help='input CSV file name')
     p.add_argument('-o', '--output', help='output XLSX file name', type=str)
     p.add_argument('-e', '--encoding', help='encoding type of input file', type=str, default=None)
     p.add_argument('-s', '--sheet-name', help='sheet name in output file', type=str)
